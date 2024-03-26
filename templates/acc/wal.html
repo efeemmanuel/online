@@ -1,0 +1,26 @@
+<!-- acc/wal.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Transfer</title>
+</head>
+<body>
+    <h2>Cryptocurrency Transfer</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="wal">Wallet Address:</label><br>
+        <input type="text" id="wal" name="wal"><br>
+        
+        <label for="ammount">Amount:</label><br>
+        <input type="text" id="ammount" name="ammount"><br>
+        
+        <label for="coin">Coin:</label><br>
+        <input type="text" id="coin" name="coin"><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

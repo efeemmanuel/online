@@ -1,0 +1,64 @@
+
+{% extends 'acc/base.html' %}
+{% load static %}
+{% load humanize %}
+{% block content %}
+    <body class="nk-body npc-crypto bg-white has-sidebar dark-mode ">
+        <div class="nk-app-root">
+            <!-- main @s -->
+            <div class="nk-main ">
+                <!-- sidebar @s -->
+                {% include 'acc/side.html' %}
+                <!-- sidebar @e -->
+                <!-- wrap @s -->
+                <div class="nk-wrap ">
+                    <!-- main header @s -->
+                    {% include 'acc/main.html' %}
+                   
+                    <!-- main header @e --><div class="nk-content">
+            <iframe             src="//www.exchangerates.org.uk/widget/ER-LRTICKER.php?w=1400&amp;s=1&amp;mc=GBP&amp;mbg=F0F0F0&amp;bs=yes&amp;bc=000044&amp;f=verdana&amp;fs=10px&amp;fc=000044&amp;lc=000044&amp;lhc=FE9A00&amp;vc=FE9A00&amp;vcu=008000&amp;vcd=FF0000&amp;"             height="30" width="100%" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"></iframe> <div class="card card-preview ">
+                  <div class="card-inner p-0">
+                    <table class="datatable-init table">
+                      <thead>
+                        <tr>
+                        <th>Ref </th>
+                         <th>Type</th>
+                           <th>Scope</th>
+                          <th>Amount</th>
+                          <th>Date </th>
+                          <th>Description</th>
+                          <th>Status</th>
+                      </tr>
+                    </thead>
+                     <tbody>
+                      {% for i in qs %}
+                                            <tr>
+                          <td>{{i.accountnumber}}</td>    
+                          <td>{{i.status2}}</td>  
+                          <td>{{i.description}}</td> 
+                          <td><b>USD</b> {{i.amount}}</td>    
+                          <td>{{i.created_at}}</td>  
+                         <td>{{i.accountname}}</td>     
+                          <td><strong class='text-success'>{{i.status}}</strong></td> 
+                          </tr>
+                          {% endfor %} 
+                      
+                            </tbody>
+          </table>
+          </div>
+      </div>
+    </div>
+   
+                    <!-- footer @e -->
+                </div>
+                <!-- wrap @e -->
+            </div>
+            <!-- main @e -->
+        </div>
+        <!-- app-root @e -->
+        <!-- JavaScript -->
+       
+       
+    </body>
+    
+ {% endblock content %}

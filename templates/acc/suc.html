@@ -1,0 +1,36 @@
+{%  load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+   
+    <body>
+      <div class="card">
+     
+       
+        <div class="container">
+          <div class="row text-center">
+                <div class="col-sm-6 col-sm-offset-3">
+                <br><br> <h2 style="color:#ffe520">Pending</h2>
+                <img src="/static/pending-clock-icon.png" width="100">
+                <h3>Dear,{{user.username}}</h3>
+                <p style="font-size:20px;color:#5C5C5C;">Your bank – Smaller banks may take longer for international transfers, as they may not have an International Bank Account Number (IBAN).
+                  • Receiving bank – If you’re sending a wire transfer to a bank other than your own, the banks have to communicate which can take time.
+                  • Time of transfer – Sending transfers earlier in the day is better. If you send it at the end of the day, it has to wait until the next business day to start processing. The same goes for the end of the week, or right before a bank holiday.
+                  • and send me Normal take 3 business days. To arrive in your accommodation</p>
+                <a href="{% url 'userurl:profile' %}" class="btn btn-success">     Log in      </a>
+            <br><br>
+                </div>
+                
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

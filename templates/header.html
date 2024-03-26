@@ -1,0 +1,92 @@
+{% load static  %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<!-- Mirrored from pixner.net/bankio/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Feb 2022 23:20:32 GMT -->
+
+<!-- Mirrored from cressetunionalliance.live.geraldwhitesaving.com/home by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 14:26:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cressetunionalliance.live</title>
+
+    <link rel="shortcut icon" href="/static/assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/static/assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="/static/assets/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="/static/assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="/static/assets/css/arafat-font.css">
+    <link rel="stylesheet" href="/static/assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <link rel="stylesheet" href="/static/cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="overlay">
+          <div class="container">
+            <div class="row d-flex header-area">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="{% url 'indexurl:index' %}">
+                  <img src="/static/myaccount/logo.png" width="150px" class="logo" alt="logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbar-content">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                  <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="{% url 'indexurl:index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="{% url 'indexurl:about' %}">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown main-navbar">
+                      <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside">Product</a>
+                      <ul class="dropdown-menu main-menu shadow">
+                        <li class="dropend sub-navbar">
+                            <a href="javascript:void(0)" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                              data-bs-auto-close="outside">Card</a>
+                            <ul class="dropdown-menu sub-menu shadow">
+                              <li><a class="nav-link" href="{% url 'indexurl:services' %}">Card</a></li>
+                             
+                            </ul>
+                        </li>
+                        <li class="dropend sub-navbar">
+                          <a href="javascript:void(0)" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Loan</a>
+                          <ul class="dropdown-menu sub-menu shadow">
+                            <li><a class="nav-link" href="{% url 'indexurl:loan' %}">Business Loans</a></li>
+                          </ul>
+                        </li>
+                       
+                      </ul>
+                    </li>
+                   
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'indexurl:contact' %}">Contact Us</a>
+                    </li>
+                  </ul>
+                  <div class="right-area header-action d-flex align-items-center">
+                    <a href="{% url 'userurl:profile' %}" class="cmn-btn">Access Account</a>
+                </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- header-section end -->
+    <!-- banner-section start -->
